@@ -4,7 +4,7 @@ $(function () {
     var timeBlockId = $(this).parent().attr("id");
     var userInput = $(this).siblings(".description").val();
     localStorage.setItem(timeBlockId, userInput);
-
+  })
 
     function updateTimeBlocks() {
       var currentHour = dayjs().hour();
@@ -35,5 +35,3 @@ $(function () {
 
     $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY"));
   });
-}
-)
